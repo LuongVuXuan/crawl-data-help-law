@@ -2,7 +2,7 @@
 Use Playwright to crawl and export to CSV files
 # Chạy chương trình
 - npm i  
-Mục đích là để install các lib depenencies có dùng trong project
+Mục đích là để install các lib depencies có dùng trong project
 - node index  
 Chạy file index.js
 # Lưu ý
