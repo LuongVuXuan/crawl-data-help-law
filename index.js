@@ -4,7 +4,7 @@ const BASE_URL = "https://hoidap.thuvienphapluat.vn/tim-theo-tu-van.html";
 
 // Easy to Divide to run many times
 const START_INDEX = 1;
-const END_INDEX = 2; // max INDEX of this page is 12383
+const END_INDEX = 10; // max INDEX of this page is 12383
 
 // Init records to write
 const records = [];
@@ -20,7 +20,7 @@ const csvWriter = createCsvWriter({
 
 async function main() {
   // Init browser to crawl
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage();
 
   // For loop all page of link base
